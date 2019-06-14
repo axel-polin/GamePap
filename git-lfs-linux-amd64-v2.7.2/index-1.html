@@ -1,0 +1,166 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Inconnu(e) </title></head><body>
+<h1 id="git-large-file-storage">Git Large File Storage</h1>
+<table>
+<thead>
+<tr>
+<th align="left">Linux</th>
+<th align="left">macOS</th>
+<th align="left">Windows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://travis-ci.org/git-lfs/git-lfs"> <img alt="Linux build status" src="https://travis-ci.org/git-lfs/git-lfs.svg?branch=master" /></a></td>
+<td align="left"><a href="https://circleci.com/gh/git-lfs/git-lfs"><img alt="macOS build status" src="https://circleci.com/gh/git-lfs/git-lfs.svg?style=shield&amp;circle-token=856152c2b02bfd236f54d21e1f581f3e4ebf47ad" /></a></td>
+<td align="left"><a href="https://ci.appveyor.com/project/git-lfs/git-lfs/branch/master"><img alt="Windows build status" src="https://ci.appveyor.com/api/projects/status/46a5yoqc3hk59bl5/branch/master?svg=true" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://git-lfs.github.com">Git LFS</a> is a command line extension and
+<a href="docs/spec.md">specification</a> for managing large files with Git.</p>
+<p>The client is written in Go, with pre-compiled binaries available for Mac,
+Windows, Linux, and FreeBSD. Check out the <a href="http://git-lfs.github.com">website</a>
+for an overview of features.</p>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="downloading">Downloading</h3>
+<p>You can install the Git LFS client in several different ways, depending on your
+setup and preferences.</p>
+<ul>
+<li><strong>Linux users</strong>. Debian and RPM packages are available from
+  <a href="https://packagecloud.io/github/git-lfs/install">PackageCloud</a>.</li>
+<li><strong>macOS users</strong>. <a href="https://brew.sh">Homebrew</a> bottles are distributed, and can
+  be installed via <code>brew install git-lfs</code>.</li>
+<li><strong>Windows users</strong>. Git LFS is included in the distribution of
+  <a href="https://gitforwindows.org/">Git for Windows</a>. Alternatively, you can
+  install a recent version of Git LFS from the <a href="https://chocolatey.org/">Chocolatey</a> package manager.</li>
+<li><strong>Binary packages</strong>. In addition, <a href="https://github.com/git-lfs/git-lfs/releases">binary packages</a> are
+available for Linux, macOS, Windows, and FreeBSD.</li>
+<li><strong>Building from source</strong>. <a href="https://github.com/git-lfs/git-lfs.git">This repository</a> can also be
+built from source using the latest version of <a href="https://golang.org">Go</a>, and the
+available instructions in our
+<a href="https://github.com/git-lfs/git-lfs/wiki/Installation#source">Wiki</a>.</li>
+</ul>
+<h3 id="installing">Installing</h3>
+<h4 id="from-binary">From binary</h4>
+<p>The <a href="https://github.com/git-lfs/git-lfs/releases">binary packages</a> include a script which will:</p>
+<ul>
+<li>Install Git LFS binaries onto the system <code>$PATH</code></li>
+<li>Run <code>git lfs install</code> to
+perform required global configuration changes.</li>
+</ul>
+<p><code>ShellSession
+$ ./install.sh</code></p>
+<h4 id="from-source">From source</h4>
+<ul>
+<li>Place the <code>git-lfs</code> binary on your systemâ€™s executable <code>$PATH</code> or equivalent.</li>
+<li>Git LFS requires global configuration changes once per-machine. This can be done by
+running:</li>
+</ul>
+<p><code>ShellSession
+$ git lfs install</code></p>
+<h2 id="example-usage">Example Usage</h2>
+<p>To begin using Git LFS within a Git repository that is not already configured
+for Git LFS, you can indicate which files you would like Git LFS to manage.
+This can be done by running the following <em>from within a Git repository</em>:</p>
+<p><code>bash
+$ git lfs track "*.psd"</code></p>
+<p>(Where <code>*.psd</code> is the pattern of filenames that you wish to track. You can read
+more about this pattern syntax
+<a href="https://git-scm.com/docs/gitattributes">here</a>).</p>
+<p>After any invocation of <code>git-lfs-track(1)</code> or <code>git-lfs-untrack(1)</code>, you <em>must
+commit changes to your <code>.gitattributes</code> file</em>. This can be done by running:</p>
+<p><code>bash
+$ git add .gitattributes
+$ git commit -m "track *.psd files using Git LFS"</code></p>
+<p>You can now interact with your Git repository as usual, and Git LFS will take
+care of managing your large files. For example, changing a file named <code>my.psd</code>
+(tracked above via <code>*.psd</code>):</p>
+<p><code>bash
+$ git add my.psd
+$ git commit -m "add psd"</code></p>
+<blockquote>
+<p><em>Tip:</em> if you have large files already in your repository's history, <code>git lfs
+track</code> will <em>not</em> track them retroactively. To migrate existing large files
+in your history to use Git LFS, use <code>git lfs migrate</code>. For example:</p>
+<p><code>$ git lfs migrate import --include="*.psd"</code></p>
+<p>For more information, read <a href="https://github.com/git-lfs/git-lfs/blob/master/docs/man/git-lfs-migrate.1.ronn"><code>git-lfs-migrate(1)</code></a>.</p>
+</blockquote>
+<p>You can confirm that Git LFS is managing your PSD file:</p>
+<p><code>bash
+$ git lfs ls-files
+3c2f7aedfb * my.psd</code></p>
+<p>Once you've made your commits, push your files to the Git remote:</p>
+<p>```bash
+$ git push origin master
+Uploading LFS objects: 100% (1/1), 810 B, 1.2 KB/s</p>
+<h1 id="_1">...</h1>
+<p>To https://github.com/git-lfs/git-lfs-test
+   67fcf6a..47b2002  master -&gt; master
+```</p>
+<p>Note: Git LFS requires at least Git 1.8.2 on Linux or 1.8.5 on macOS.</p>
+<h2 id="limitations">Limitations</h2>
+<p>Git LFS maintains a list of currently known limitations, which you can find and
+edit <a href="https://github.com/git-lfs/git-lfs/wiki/Limitations">here</a>.</p>
+<h2 id="need-help">Need Help?</h2>
+<p>You can get help on specific commands directly:</p>
+<p><code>bash
+$ git lfs help &lt;subcommand&gt;</code></p>
+<p>The <a href="docs">official documentation</a> has command references and specifications for
+the tool.</p>
+<p>You can always <a href="https://github.com/git-lfs/git-lfs/issues">open an issue</a>, and
+one of the Core Team members will respond to you. Please be sure to include:</p>
+<ol>
+<li>The output of <code>git lfs env</code>, which displays helpful information about your
+   Git repository useful in debugging.</li>
+<li>Any failed commands re-run with <code>GIT_TRACE=1</code> in the environment, which
+   displays additional information pertaining to why a command crashed.</li>
+</ol>
+<h2 id="contributing">Contributing</h2>
+<p>See <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> for info on working on Git LFS and
+sending patches. Related projects are listed on the <a href="https://github.com/git-lfs/git-lfs/wiki/Implementations">Implementations wiki
+page</a>.</p>
+<h2 id="core-team">Core Team</h2>
+<p>These are the humans that form the Git LFS core team, which runs the project.</p>
+<p>In alphabetical order:</p>
+<table>
+<thead>
+<tr>
+<th><a href="https://github.com/bk2204">@bk2204</a></th>
+<th><a href="https://github.com/larsxschneider">@larsxschneider</a></th>
+<th><a href="https://github.com/PastelMobileSuit">@PastelMobileSuit</a></th>
+<th><a href="https://github.com/ttaylorr">@ttaylorr</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/bk2204"><img alt="" src="https://avatars1.githubusercontent.com/u/497054?s=100&amp;v=4" /></a></td>
+<td><a href="https://github.com/larsxschneider"><img alt="" src="https://avatars1.githubusercontent.com/u/477434?s=100&amp;v=4" /></a></td>
+<td><a href="https://github.com/PastelMobileSuit"><img alt="" src="https://avatars2.githubusercontent.com/u/37254014?s=100&amp;v=4" /></a></td>
+<td><a href="https://github.com/ttaylorr"><img alt="" src="https://avatars2.githubusercontent.com/u/443245?s=100&amp;v=4" /></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="alumni">Alumni</h3>
+<p>These are the humans that have in the past formed the Git LFS core team, or
+have otherwise contributed a significant amount to the project. Git LFS would
+not be possible without them.</p>
+<p>In alphabetical order:</p>
+<table>
+<thead>
+<tr>
+<th><a href="https://github.com/andyneff">@andyneff</a></th>
+<th><a href="https://github.com/rubyist">@rubyist</a></th>
+<th><a href="https://github.com/sinbad">@sinbad</a></th>
+<th><a href="https://github.com/technoweenie">@technoweenie</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/andyneff"><img alt="" src="https://avatars1.githubusercontent.com/u/7596961?v=3&amp;s=100" /></a></td>
+<td><a href="https://github.com/rubyist"><img alt="" src="https://avatars1.githubusercontent.com/u/143?v=3&amp;s=100" /></a></td>
+<td><a href="https://github.com/sinbad"><img alt="" src="https://avatars1.githubusercontent.com/u/142735?v=3&amp;s=100" /></a></td>
+<td><a href="https://github.com/technoweenie"><img alt="" src="https://avatars3.githubusercontent.com/u/21?v=3&amp;s=100" /></a></td>
+</tr>
+</tbody>
+</table>
+</body></html>
