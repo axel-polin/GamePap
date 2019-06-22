@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="FragmentInput.xsd">	<Compound name="CP091241">
+		<Fragment folderName="807" fileName="/807/807_COLR_TRANS.png" maskName="/807/shapeMask_COLR.png" versoFileName="/807/807_COLV_TRANS.png" versoMaskName="/807/shapeMask_COLV.png" angle="-9.292855" scale="0.65000004" posX="0.0" posY="46.8528" ></Fragment>
+		<Fragment folderName="806" fileName="/806/806_COLR_TRANS.png" maskName="/806/shapeMask_COLR.png" versoFileName="/806/806_COLV_TRANS.png" versoMaskName="/806/shapeMask_COLV.png" angle="-2.9842105" scale="0.8500001" posX="4.734436" posY="0.0" ></Fragment>
+	</Compound>
+	<Compound name="CP091527">
+		<Fragment folderName="806" fileName="/806/806_COLR_TRANS.png" maskName="/806/shapeMask_COLR.png" versoFileName="/806/806_COLV_TRANS.png" versoMaskName="/806/shapeMask_COLV.png" angle="-2.9842105" scale="0.55" posX="27.731934" posY="0.0" ></Fragment>
+		<Fragment folderName="807" fileName="/807/807_COLR_TRANS.png" maskName="/807/shapeMask_COLR.png" versoFileName="/807/807_COLV_TRANS.png" versoMaskName="/807/shapeMask_COLV.png" angle="-9.28975" scale="0.45000002" posX="0.0" posY="42.6149" ></Fragment>
+	</Compound>
+</Document>

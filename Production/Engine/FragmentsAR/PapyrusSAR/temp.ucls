@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="" project="PapyrusSAR" file="/PapyrusSAR/src/main/java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="1184" x="173" y="348"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="2" language="java" name="graphic_module" project="PapyrusSAR" 
+    file="/PapyrusSAR/src/main/java/graphic_module" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="394" width="1189" x="172" y="488"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="3" language="java" name="Papyrus" project="PapyrusSAR" file="/PapyrusSAR/src/main/java/Papyrus.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="68" width="142" x="209" y="386"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="graphic_module.DocumentObject" project="PapyrusSAR" 
+    file="/PapyrusSAR/src/main/java/graphic_module/DocumentObject.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="66" width="139" x="361" y="596"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="graphic_module.FragmentObject" project="PapyrusSAR" 
+    file="/PapyrusSAR/src/main/java/graphic_module/FragmentObject.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="71" width="135" x="206" y="727"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="true" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="graphic_module.CompoundObject" project="PapyrusSAR" 
+    file="/PapyrusSAR/src/main/java/graphic_module/CompoundObject.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="64" width="131" x="517" y="734"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="true" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="graphic_module.ScreenObject" project="PapyrusSAR" 
+    file="/PapyrusSAR/src/main/java/graphic_module/ScreenObject.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="74" width="122" x="943" y="582"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="true" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <package id="8" language="java" name="papyrus_application" project="PapyrusSAR" 
+    file="/PapyrusSAR/src/main/java/papyrus_application" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="195" width="1191" x="171" y="902"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="9" language="java" name="papyrus_application.Fragment" project="PapyrusSAR" 
+    file="/PapyrusSAR/src/main/java/papyrus_application/Fragment.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="72" width="141" x="307" y="1008"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="papyrus_application.Compound" project="PapyrusSAR" 
+    file="/PapyrusSAR/src/main/java/papyrus_application/Compound.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="68" width="131" x="1133" y="1019"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="papyrus_application.ListofCompound" project="PapyrusSAR" 
+    file="/PapyrusSAR/src/main/java/papyrus_application/ListofCompound.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="66" width="118" x="600" y="971"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="graphic_module.Const.Common" project="PapyrusSAR" 
+    file="/PapyrusSAR/src/main/java/graphic_module/Const.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="64" width="85" x="1045" y="663"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="true" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="graphic_module.Const" project="PapyrusSAR" 
+    file="/PapyrusSAR/src/main/java/graphic_module/Const.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="68" width="85" x="1115" y="562"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="true" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="graphic_module.Const.ListBox" project="PapyrusSAR" 
+    file="/PapyrusSAR/src/main/java/graphic_module/Const.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="65" width="85" x="1263" y="620"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="true" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="graphic_module.Const.InputFileConsts" project="PapyrusSAR" 
+    file="/PapyrusSAR/src/main/java/graphic_module/Const.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="65" width="113" x="1237" y="716"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="true" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="graphic_module.Const.OutputFileConsts" project="PapyrusSAR" 
+    file="/PapyrusSAR/src/main/java/graphic_module/Const.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="64" width="123" x="1229" y="804"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="true" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="graphic_module.Const.CompoundListBox" project="PapyrusSAR" 
+    file="/PapyrusSAR/src/main/java/graphic_module/Const.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="72" width="130" x="1066" y="786"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="true" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="graphic_module.Const.Menu" project="PapyrusSAR" 
+    file="/PapyrusSAR/src/main/java/graphic_module/Const.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="65" width="85" x="1264" y="544"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="true" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="processing.core.PApplet" project="PapyrusSAR" 
+    file="/home/hungpham/.m2/repository/org/processing/core/3.3.6/core-3.3.6.jar" binary="true" corner="BOTTOM_RIGHT">    
+    <position height="51" width="137" x="210" y="171"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="fr.inria.papart.procam.Papart" project="PapyrusSAR" 
+    file="/home/hungpham/.m2/repository/fr/inria/papart/1.4-SNAPSHOT/papart-1.4-SNAPSHOT.jar" binary="true" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="575" y="197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="fr.inria.papart.multitouch.detection.TouchDetectionDepth" project="PapyrusSAR" 
+    file="/home/hungpham/.m2/repository/fr/inria/papart/1.4-SNAPSHOT/papart-1.4-SNAPSHOT.jar" binary="true" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="808" y="197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="fr.inria.papart.procam.TableScreen" project="PapyrusSAR" 
+    file="/home/hungpham/.m2/repository/fr/inria/papart/1.4-SNAPSHOT/papart-1.4-SNAPSHOT.jar" binary="true" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="98" x="947" y="172"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="tech.lity.rea.skatolo.Skatolo" project="PapyrusSAR" 
+    file="/home/hungpham/.m2/repository/tech/lity/rea/skatolo/1.1/skatolo-1.1.jar" binary="true" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1242" y="200"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <association id="24">    
+    <bendpoint x="706" y="761"/>    
+    <bendpoint x="707" y="633"/>    
+    <bendpoint x="593" y="633"/>    
+    <end type="SOURCE" refId="6" navigable="false" variant="AGGREGATION">      
+      <attribute id="25" name="innerFragments">        
+        <position height="17" width="86" x="596" y="668"/>      
+      </attribute>      
+      <multiplicity id="26" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="27">    
+    <end type="SOURCE" refId="7" navigable="false" variant="ASSOCIATION">      
+      <attribute id="28" name="skatolo">        
+        <position height="17" width="41" x="1118" y="521"/>      
+      </attribute>      
+      <multiplicity id="29" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="30">    
+    <end type="SOURCE" refId="20" navigable="false" variant="ASSOCIATION">      
+      <attribute id="31" name="singleton"/>      
+      <multiplicity id="32" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="33">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="19"/>  
+  </generalization>  
+  <association id="34">    
+    <end type="SOURCE" refId="6" navigable="false" variant="AGGREGATION">      
+      <attribute id="35" name="compound">        
+        <position height="17" width="58" x="687" y="797"/>      
+      </attribute>      
+      <multiplicity id="36" minimum="0" maximum="1">        
+        <position height="15" width="23" x="1127" y="994"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="37">    
+    <end type="SOURCE" refId="3" navigable="false" variant="AGGREGATION">      
+      <attribute id="38" name="fingerDetection">        
+        <position height="17" width="82" x="390" y="382"/>      
+      </attribute>      
+      <multiplicity id="39" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="40">    
+    <bendpoint x="856" y="837"/>    
+    <bendpoint x="582" y="838"/>    
+    <end type="SOURCE" refId="7" navigable="false" variant="AGGREGATION">      
+      <attribute id="41" name="compoundObj_List">        
+        <position height="17" width="96" x="837" y="709"/>      
+      </attribute>      
+      <multiplicity id="42" minimum="0" maximum="2147483647">        
+        <position height="15" width="21" x="550" y="808"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="43">    
+    <end type="SOURCE" refId="7" navigable="false" variant="ASSOCIATION">      
+      <attribute id="44" name="fingerDetection">        
+        <position height="17" width="80" x="874" y="515"/>      
+      </attribute>      
+      <multiplicity id="45" minimum="0" maximum="1">        
+        <position height="15" width="23" x="838" y="233"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="46">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="12"/>  
+  </nesting>  
+  <generalization id="47">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <nesting id="48">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="18"/>  
+  </nesting>  
+  <association id="49">    
+    <end type="SOURCE" refId="11" navigable="false" variant="AGGREGATION">      
+      <attribute id="50" name="compoundList">        
+        <position height="17" width="74" x="800" y="995"/>      
+      </attribute>      
+      <multiplicity id="51" minimum="0" maximum="2147483647">        
+        <position height="15" width="21" x="1087" y="1025"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="52">    
+    <bendpoint x="1192" y="744"/>    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="16"/>  
+  </nesting>  
+  <association id="53">    
+    <end type="SOURCE" refId="10" navigable="false" variant="AGGREGATION">      
+      <attribute id="54" name="fragmentList">        
+        <position height="17" width="67" x="1006" y="1060"/>      
+      </attribute>      
+      <multiplicity id="55" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="56">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="17"/>  
+  </nesting>  
+  <generalization id="57">    
+    <bendpoint x="585" y="692"/>    
+    <bendpoint x="429" y="693"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <association id="58">    
+    <bendpoint x="279" y="560"/>    
+    <bendpoint x="999" y="565"/>    
+    <end type="SOURCE" refId="3" navigable="false" variant="AGGREGATION">      
+      <attribute id="59" name="screenObject">        
+        <position height="17" width="72" x="286" y="518"/>      
+      </attribute>      
+      <multiplicity id="60" minimum="0" maximum="1">        
+        <position height="15" width="23" x="978" y="537"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="61">    
+    <end type="SOURCE" refId="5" navigable="false" variant="AGGREGATION">      
+      <attribute id="62" name="fragment">        
+        <position height="17" width="51" x="309" y="822"/>      
+      </attribute>      
+      <multiplicity id="63" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="64">    
+    <bendpoint x="276" y="693"/>    
+    <bendpoint x="430" y="693"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <nesting id="65">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="14"/>  
+  </nesting>  
+  <association id="66">    
+    <bendpoint x="1009" y="854"/>    
+    <bendpoint x="271" y="854"/>    
+    <end type="SOURCE" refId="7" navigable="false" variant="AGGREGATION">      
+      <attribute id="67" name="fragmentObj_List">        
+        <position height="17" width="89" x="1007" y="733"/>      
+      </attribute>      
+      <multiplicity id="68" minimum="0" maximum="2147483647">        
+        <position height="15" width="21" x="242" y="808"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="69">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="15"/>  
+  </nesting>  
+  <association id="70">    
+    <end type="SOURCE" refId="3" navigable="false" variant="AGGREGATION">      
+      <attribute id="71" name="papart">        
+        <position height="17" width="41" x="347" y="322"/>      
+      </attribute>      
+      <multiplicity id="72" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

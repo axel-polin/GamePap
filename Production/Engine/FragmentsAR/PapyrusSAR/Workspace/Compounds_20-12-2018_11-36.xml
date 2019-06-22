@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="FragmentInput.xsd">	<Compound name="CP111339">
+		<Fragment folderName="807" fileName="/807/807_COLR_TRANS.png" maskName="/807/shapeMask_COLR.png" versoFileName="/807/807_COLV_TRANS.png" versoMaskName="/807/shapeMask_COLV.png" angle="0.0" scale="0.25" posX="0.7172241" posY="217.48486" ></Fragment>
+		<Fragment folderName="1242" fileName="/1242/1242_COLR_TRANS.png" maskName="/1242/shapeMask_COLR.png" versoFileName="/1242/1242_COLV_TRANS.png" versoMaskName="/1242/shapeMask_COLV.png" angle="0.0" scale="0.23853211" posX="13.091919" posY="0.0" ></Fragment>
+		<Fragment folderName="806" fileName="/806/806_COLR_TRANS.png" maskName="/806/shapeMask_COLR.png" versoFileName="/806/806_COLV_TRANS.png" versoMaskName="/806/shapeMask_COLV.png" angle="0.0" scale="0.25" posX="0.0" posY="241.76201" ></Fragment>
+	</Compound>
+	<Compound name="CP172206">
+		<Fragment folderName="806" fileName="/806/806_COLR_TRANS.png" maskName="/806/shapeMask_COLR.png" versoFileName="/806/806_COLV_TRANS.png" versoMaskName="/806/shapeMask_COLV.png" angle="-0.17009996" scale="0.35" posX="0.0" posY="57.224823" ></Fragment>
+		<Fragment folderName="804" fileName="/804/804_COLR_TRANS.png" maskName="/804/shapeMask_COLR.png" versoFileName="/804/804_COLV_TRANS.png" versoMaskName="/804/shapeMask_COLV.png" angle="-6.5539618" scale="0.35" posX="2.7488098" posY="0.0" ></Fragment>
+		<Fragment folderName="805" fileName="/805/805_COLR_TRANS.png" maskName="/805/shapeMask_COLR.png" versoFileName="/805/805_COLV_TRANS.png" versoMaskName="/805/shapeMask_COLV.png" angle="6.078548" scale="0.35" posX="13.517014" posY="20.205063" ></Fragment>
+	</Compound>
+	<Compound name="CP111313">
+		<Fragment folderName="807" fileName="/807/807_COLR_TRANS.png" maskName="/807/shapeMask_COLR.png" versoFileName="/807/807_COLV_TRANS.png" versoMaskName="/807/shapeMask_COLV.png" angle="0.0" scale="0.25" posX="0.0" posY="0.0" ></Fragment>
+	</Compound>
+	<Compound name="CP172404">
+		<Fragment folderName="1242" fileName="/1242/1242_COLR_TRANS.png" maskName="/1242/shapeMask_COLR.png" versoFileName="/1242/1242_COLV_TRANS.png" versoMaskName="/1242/shapeMask_COLV.png" angle="5.9239" scale="0.4385321" posX="0.0" posY="0.0" ></Fragment>
+		<Fragment folderName="1278_c" fileName="/1278_c/1278_c_COLR_TRANS.png" maskName="/1278_c/shapeMask_COLR.png" versoFileName="/1278_c/1278_c_COLV_TRANS.png" versoMaskName="/1278_c/shapeMask_COLV.png" angle="-6.7054353" scale="0.45" posX="40.540817" posY="94.67909" ></Fragment>
+	</Compound>
+</Document>
