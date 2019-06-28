@@ -53,16 +53,14 @@ public final class Const {
     public static final class Common{
     	private Common() {} 
     	
-    	//public static final String BACKGROUND_IMG_LINK= "./Images/wood_desk_background.jpg";
-    	public static final String BACKGROUND_IMG_LINK= "/home/user/Downloads/Levels/L1/Background-v2.jpg";
-    	public static final int PROJECTION_WIDTH = 1280;// *2;
-    	public static final int PROJECTION_HEIGHT = 800;// *2;
+    	public static final String BACKGROUND_IMG_LINK= "./Images/wood_desk_background.jpg";
+    	public static final int PROJECTION_WIDTH = 1280;
+    	public static final int PROJECTION_HEIGHT = 800;
     	public static final int INTERACTION_WIDTH_MILLIMETER = 800;
     	public static final int INTERACTION_HEIGHT_MILLIMETER = 400;
     	public static final int SCREENOBJECT_X = -400;
     	public static final int SCREENOBJECT_Y = -200;
-    	//public static final String BACKGROUND_INTERACTION_IMG_LINK= "./Images/blueprint_background.jpg";
-    	public static final String BACKGROUND_INTERACTION_IMG_LINK= "/home/user/Documents/bck.png";
+    	public static final String BACKGROUND_INTERACTION_IMG_LINK= "./Images/blueprint_background.jpg";
     	public static final String WORKSPACE_FOLDER_LINK= "./Workspace";
     }
     

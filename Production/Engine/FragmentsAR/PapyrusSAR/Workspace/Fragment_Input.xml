@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <!--
   Copyright (C) 2018 hungpham.
-  All rights reserved. This program and the accompanying materials are belonged to the MorphoBoid group of Image and Sound team in the LaBRI (UMR 5800) and the Ausonius Institute (UMR 5607)
+  All rights reserved. This program and the accompanying materials are belonged to the MorphoBoid group of Image and Sound team in the LaBRI (UMR 5800) and the Ausonius Institute (UMR 5607).
   
   http://morphoboid.labri.fr/projects.html
   
   Contributors:
-      hungpham - initial implementation of simulation of papyrus fragments assembly in 2D space. Version: 1.0
+      hungpham - initial implementation of simulation of papyrus fragments assembly in 2D space.
 -->
 <Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="Fragment_Input.xsd">
     <Fragment folderName="802" fileName="/802/802_COLR_TRANS.png" maskName="/802/shapeMask_COLR.png" versoFileName="/802/802_COLV_TRANS.png" versoMaskName="/802/shapeMask_COLV.png"></Fragment>
     <Fragment folderName="803_a" fileName="/803_a/803_a_COLR_TRANS.png" maskName="/803_a/shapeMask_COLR.png" versoFileName="/803_a/803_a_COLV_TRANS.png" versoMaskName="/803_a/shapeMask_COLV.png"></Fragment>
-  <!--  <Fragment folderName="803_b"  fileName="/803_b/803_b_COLR_TRANS.png" maskName="/803_b/shapeMask_COLR.png" versoFileName="/803_b/803_b_COLV_TRANS.png" versoMaskName="/803_b/shapeMask_COLV.png"></Fragment>
+    <Fragment folderName="803_b"  fileName="/803_b/803_b_COLR_TRANS.png" maskName="/803_b/shapeMask_COLR.png" versoFileName="/803_b/803_b_COLV_TRANS.png" versoMaskName="/803_b/shapeMask_COLV.png"></Fragment>
     <Fragment folderName="804"  fileName="/804/804_COLR_TRANS.png" maskName="/804/shapeMask_COLR.png" versoFileName="/804/804_COLV_TRANS.png" versoMaskName="/804/shapeMask_COLV.png"></Fragment>    
     <Fragment folderName="805" fileName="/805/805_COLR_TRANS.png" maskName="/805/shapeMask_COLR.png" versoFileName="/805/805_COLV_TRANS.png" versoMaskName="/805/shapeMask_COLV.png"></Fragment>
     <Fragment folderName="806" fileName="/806/806_COLR_TRANS.png" maskName="/806/shapeMask_COLR.png" versoFileName="/806/806_COLV_TRANS.png" versoMaskName="/806/shapeMask_COLV.png"></Fragment>
@@ -20,5 +20,4 @@ xsi:noNamespaceSchemaLocation="Fragment_Input.xsd">
     <Fragment folderName="1242" fileName="/1242/1242_COLR_TRANS.png" maskName="/1242/shapeMask_COLR.png" versoFileName="/1242/1242_COLV_TRANS.png" versoMaskName="/1242/shapeMask_COLV.png"></Fragment>
     <Fragment folderName="1278_b" fileName="/1278_b/1278_b_COLR_TRANS.png" maskName="/1278_b/shapeMask_COLR.png" versoFileName="/1278_b/1278_b_COLV_TRANS.png" versoMaskName="/1278_b/shapeMask_COLV.png"></Fragment>
     <Fragment folderName="1278_c" fileName="/1278_c/1278_c_COLR_TRANS.png" maskName="/1278_c/shapeMask_COLR.png" versoFileName="/1278_c/1278_c_COLV_TRANS.png" versoMaskName="/1278_c/shapeMask_COLV.png"></Fragment>
--->
 </Document>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!--
   Copyright (C) 2018 hungpham.
-  All rights reserved. This program and the accompanying materials are belonged to the MorphoBoid group of Image and Sound team in the LaBRI (UMR 5800) and the Ausonius Institute (UMR 5607)
+  All rights reserved. This program and the accompanying materials are belonged to the MorphoBoid group of Image and Sound team in the LaBRI (UMR 5800) and the Ausonius Institute (UMR 5607).
   
   http://morphoboid.labri.fr/projects.html
   
   Contributors:
-      hungpham - initial implementation of simulation of papyrus fragments assembly in 2D space. Version: 1.0
+      hungpham - initial implementation of simulation of papyrus fragments assembly in 2D space.
 -->
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="Document">

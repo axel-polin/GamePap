@@ -54,7 +54,7 @@ public class Papyrus extends PApplet {
 	@Override
 	public void settings() {
 		// the application will be rendered in full screen, and using a 3Dengine.
-		fullScreen(P3D, 2);
+		fullScreen(P3D, 1);
 	}
 
 	@Override
