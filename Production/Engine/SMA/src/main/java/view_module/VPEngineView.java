@@ -53,7 +53,6 @@ public class VPEngineView extends TableScreen {
 	
 	HoverToggle updateButton;
 	
-	//public VPEngineView(PApplet parent, VPEngineController vpEngineController, TouchDetectionDepth fingerDetection, float x, float y, float width, float height){
 	public VPEngineView(VPEngineController vpEngineController, TouchDetectionDepth fingerDetection, float x, float y, float width, float height){
 		super(x, y, width, height);
 		this.parent = parent;
@@ -64,17 +63,12 @@ public class VPEngineView extends TableScreen {
 	
 	@Override
 	public void setup() {
-		
-	//	background = parent.loadImage(Const.Common.BACKGROUND_INTERACTION_IMG_LINK);
-	//	background.resize(Const.Common.INTERACTION_WIDTH_MILLIMETER, Const.Common.INTERACTION_HEIGHT_MILLIMETER);
 
 		skatolo = new Skatolo(parent, this);
 		skatolo.getMousePointer().disable();
 
 		// Manual draw required with off screens.
 		skatolo.setAutoDraw(false);
-
-		//initializeMenu();
 	}
 	
 	@Override
@@ -112,21 +106,6 @@ public class VPEngineView extends TableScreen {
 		}
 	}
 
-	/*public void initializeMenu() {
-		PImage[] select_imgs = { parent.loadImage(Const.Menu.SELECT_IMG_LINK),
-				parent.loadImage(Const.Menu.SELECT_SEL_IMG_LINK), parent.loadImage(Const.Menu.SELECT_SEL_IMG_LINK) };
-		PImage[] open_imgs = { parent.loadImage(Const.Menu.OPEN_IMG_LINK),
-				parent.loadImage(Const.Menu.OPEN_SEL_IMG_LINK), parent.loadImage(Const.Menu.OPEN_SEL_IMG_LINK) };
-
-		skatolo.addHoverToggle(Const.Menu.SELECT_BTN).setPosition(Const.Menu.SELECT_BTN_X, Const.Menu.SELECT_BTN_Y)
-				.setImages(select_imgs).setSize(Const.Menu.MULSELECT_BTN_WIDTH, Const.Menu.MULSELECT_BTN_HEIGHT)
-				.getCaptionLabel().setColor(color(0));
-		skatolo.addHoverButton(Const.Menu.RESELECT_BTN)
-				.setPosition(Const.Menu.RESELECT_BTN_X, Const.Menu.RESELECT_BTN_Y).setImages(common_btn_imgs)
-				.setSize(Const.Menu.DEFAULT_BTN_WIDTH, Const.Menu.DEFAULT_BTN_WIDTH);
-
-	}*/
-
 	public void TittleScreen(PImage[] ButtonsLinks){
 		
 		PFont tittle = parent.createFont("./Assets/Fonts/liberation_sans/LiberationSans-Regular.ttf",20,true);
@@ -141,19 +120,21 @@ public class VPEngineView extends TableScreen {
 		parent.textFont(tittle);
 		parent.text("Pei et l'évadée de la nuit",100,150);
 		
-		skatolo.addHoverToggle("startGame").setPosition(100,100)
-				.setImages(ButtonsLinks).setSize(200,28)
-				.getCaptionLabel().setColor(color(0));
-				
-		/*skatolo.addHoverToggle("chapterSelection").setPosition(150,100)
-				.setImages(ButtonsLinks).setSize(30,30)
-				.getCaptionLabel().setColor(color(0));
-				
-		skatolo.addHoverToggle("credits").setPosition(200,100)
-				.setImages(ButtonsLinks).setSize(30,30)
-				.getCaptionLabel().setColor(color(0));*/
+		createHoverButton("startGame",100,100,200,28);
+		
 	}
 	
+	private void createHoverButton(String name,int pos_x,int pops_y,PImage[] img,int width,int height){
+		skatolo.addHoverButton(name).setPosition(x,y)
+				.setImages(img).setSize(width,height)
+				.getCaptionLabel();
+	}
+	
+	private void createHoverToggle(String name,int pos_x,int pops_y,PImage[] img,int width,int height,int color){
+			skatolo.addHoverToggle(name).setPosition(x,y)
+				.setImages(img).setSize(width,height)
+				.getCaptionLabel().setColor(color(color));
+	}
 	private void startGame(){
 		System.out.println("We are in startgame!");		
 	}

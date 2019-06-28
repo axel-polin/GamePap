@@ -21,21 +21,26 @@ package model_module;
 
 public class VPEngineModel {
 	
-	public static final int ProjectionWidth = 1280;
-	public static final int ProjectionHeight = 800;
-	public static final int InteractionAreaWidth = 800;
-	public static final int InteractionAreaHeight = 400;
+	public static final int PROJECTION_WIDTH = 1280;
+	public static final int PROJECTION_HEIGHT = 800;
+	public static final int INTERACTION_AREA_WIDTH = 800;
+	public static final int INTERACTION_AREA_HEIGHT = 400;
+	public static final int SCREENOBJECT_X = -400;
+    public static final int SCREENOBJECT_Y = -200;
 	
 	public class Levels { // This class contains all levels datas
 		
 		public class TittleScreen { // One class for one level which contain the data for one level.
-	
-			public static final String ButtonStartGameImageSEL = "./Assets/Buttons/TittleScreenNoSel2.png";
-			public static final String ButtonStartGameImageNOSEL = "./Assets/Buttons/TittleScreenSel2.png";
-			public static final String ButtonChapterSEL = "";
-			public static final String ButtonChapterNOSEL = "";
 			
-			public static final String Background = "./Assets/Backgrounds/TittleScreen.jpg";
+			public static final int NUMBER_BUTTONS = 3;
+			public static final int BUTTONS_X = 100;
+			public static final int BUTTON_Y_OFFSET = 50;
+			public static final String TITTLE = "";
+			public static final String BUTTON_STARTGAME_IMAGE_SEL = "./Assets/Buttons/TittleScreenNoSel2.png";
+			public static final String BUTTON_STARTGAME_IMAGE_NOSEL = "./Assets/Buttons/TittleScreenSel2.png";
+					
+			public static final String BACKGROUND = "./Assets/Backgrounds/TittleScreen.jpg";
+					
 			
 		}	
 	}

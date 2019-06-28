@@ -29,7 +29,6 @@ import tech.lity.rea.skatolo.events.ControlEvent;
 
 import model_module.VPEngineModel;
 import view_module.VPEngineView;
-import view_module.Const;
 
 public class VPEngineController {	
 	
@@ -49,26 +48,24 @@ public class VPEngineController {
 	public VPEngineController(PApplet parent, TouchDetectionDepth fingerDetection){
 		this.parent = parent;
 		this.fingerDetection = fingerDetection;
-		vpEngineView = new VPEngineView(this,fingerDetection,Const.Common.SCREENOBJECT_X, Const.Common.SCREENOBJECT_Y, Const.Common.INTERACTION_WIDTH_MILLIMETER, Const.Common.INTERACTION_HEIGHT_MILLIMETER);
+		vpEngineView = new VPEngineView(this,fingerDetection,VPEngineModel.SCREENOBJECT_X,VPEngineModel.SCREENOBJECT_Y,VPEngineModel.INTERACTION_AREA_WIDTH,VPEngineModel.INTERACTION_AREA_HEIGHT);
 		
 	}
 			
 	public void mainLoop(){
 		
-        //if (background != null) {vpEngineView.UpdateView();}
-		
 		if (updateView == true){
 			switch (level){
 				case 0:
+				
 					PImage[] ButtonsLinks = {
-						parent.loadImage(VPEngineModel.Levels.TittleScreen.ButtonStartGameImageNOSEL),
-						parent.loadImage(VPEngineModel.Levels.TittleScreen.ButtonStartGameImageSEL),
-						parent.loadImage(VPEngineModel.Levels.TittleScreen.ButtonStartGameImageSEL)
+						parent.loadImage(VPEngineModel.Levels.TittleScreen.BUTTON_STARTGAME_IMAGE_NOSEL),
+						parent.loadImage(VPEngineModel.Levels.TittleScreen.BUTTON_STARTGAME_IMAGE_SEL),
+						parent.loadImage(VPEngineModel.Levels.TittleScreen.BUTTON_STARTGAME_IMAGE_SEL)
 					};
-					background = parent.loadImage(VPEngineModel.Levels.TittleScreen.Background);
-					background.resize(VPEngineModel.ProjectionWidth,VPEngineModel.ProjectionHeight);
 					
-					vpEngineView.background = background;
+					vpEngineView.background = parent.loadImage(VPEngineModel.Levels.TittleScreen.BACKGROUND);
+					background.resize(VPEngineModel.INTERACTION_AREA_WIDTH,VPEngineModel.INTERACTION_AREA_HEIGHT);
 					vpEngineView.TittleScreen(ButtonsLinks);
 			}
 			updateView = false;

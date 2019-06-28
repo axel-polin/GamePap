@@ -62,8 +62,8 @@ public class VPEngine extends PApplet {
 	@Override
 	public void settings() {
 		// the application will be rendered in full screen, and using a 3Dengine.
-		//fullScreen(P3D, 1);
-		size(VPEngineModel.ProjectionWidth,VPEngineModel.ProjectionHeight,"processing.opengl.PGraphics3D");
+		//fullScreen(P3D, 2);
+		size(VPEngineModel.PROJECTION_WIDTH,VPEngineModel.PROJECTION_HEIGHT,"processing.opengl.PGraphics3D");
 	}
 
 	@Override
