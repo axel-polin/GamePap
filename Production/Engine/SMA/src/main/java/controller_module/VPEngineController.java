@@ -48,11 +48,11 @@ public class VPEngineController {
 	public VPEngineController(PApplet parent, TouchDetectionDepth fingerDetection){
 		this.parent = parent;
 		this.fingerDetection = fingerDetection;
-		vpEngineView = new VPEngineView(this,fingerDetection,VPEngineModel.SCREENOBJECT_X,VPEngineModel.SCREENOBJECT_Y,VPEngineModel.INTERACTION_AREA_WIDTH,VPEngineModel.INTERACTION_AREA_HEIGHT);
+		//vpEngineView = new VPEngineView(this,fingerDetection,VPEngineModel.SCREENOBJECT_X,VPEngineModel.SCREENOBJECT_Y,VPEngineModel.INTERACTION_AREA_WIDTH,VPEngineModel.INTERACTION_AREA_HEIGHT);
 		
 	}
 			
-	public void mainLoop(){
+	public void levelManagerLoop(){
 		
 		if (updateView == true){
 			switch (level){
@@ -62,10 +62,10 @@ public class VPEngineController {
 						parent.loadImage(VPEngineModel.Levels.TittleScreen.BUTTON_STARTGAME_IMAGE_NOSEL),
 						parent.loadImage(VPEngineModel.Levels.TittleScreen.BUTTON_STARTGAME_IMAGE_SEL),
 						parent.loadImage(VPEngineModel.Levels.TittleScreen.BUTTON_STARTGAME_IMAGE_SEL)
-					};
+					}; // **** Load RESSOURCE IN RESSOURCE !!!!! ***
 					
 					vpEngineView.background = parent.loadImage(VPEngineModel.Levels.TittleScreen.BACKGROUND);
-					background.resize(VPEngineModel.INTERACTION_AREA_WIDTH,VPEngineModel.INTERACTION_AREA_HEIGHT);
+					//background.resize(VPEngineModel.INTERACTION_AREA_WIDTH,VPEngineModel.INTERACTION_AREA_HEIGHT);
 					vpEngineView.TittleScreen(ButtonsLinks);
 			}
 			updateView = false;

@@ -44,26 +44,28 @@ import controller_module.VPEngineController;
 
 
 public class VPEngineView extends TableScreen {
-	//PApplet parent;
-	private TouchDetectionDepth fingerDetection;
+	
 	private Skatolo skatolo;
-	private VPEngineController vpEngineController;
+	//private VPEngineController vpEngineController;
 		
 	public PImage background;
 	
 	HoverToggle updateButton;
 	
-	public VPEngineView(VPEngineController vpEngineController, TouchDetectionDepth fingerDetection, float x, float y, float width, float height){
+	public VPEngineView(VPEngineController vpEngineController, float x, float y, float width, float height){
 		super(x, y, width, height);
-		this.parent = parent;
-		this.vpEngineController = vpEngineController;
-		this.fingerDetection = fingerDetection;
+		//this.parent = parent;
+		//this.vpEngineController = vpEngineController;
 		
+	}
+	
+	public void setEngineCtrl(VPEngineController vpEngineController){
+		this.vpEngineController = vpEngineController;
 	}
 	
 	@Override
 	public void setup() {
-
+		
 		skatolo = new Skatolo(parent, this);
 		skatolo.getMousePointer().disable();
 
@@ -110,13 +112,13 @@ public class VPEngineView extends TableScreen {
 		
 		PFont tittle = parent.createFont("./Assets/Fonts/liberation_sans/LiberationSans-Regular.ttf",20,true);
 		
-		PGraphicsOpenGL g = getGraphics();
+		//PGraphicsOpenGL g = getGraphics();
 		String StartBtnTag = "startGame";
 		int StartBtnX = 100;
 		int StartBtnY = 100;
 		
-		g.fill(0, 102, 153);
-		g.textSize(20);
+		fill(0, 102, 153);
+		textSize(20);
 		parent.textFont(tittle);
 		parent.text("Pei et l'évadée de la nuit",100,150);
 		

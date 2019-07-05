@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="Fragment_Input.xsd">	<Compound name="CP153411">
-		<Fragment folderName="807" fileName="/807/807_COLR_TRANS.png" maskName="/807/shapeMask_COLR.png" versoFileName="/807/807_COLV_TRANS.png" versoMaskName="/807/shapeMask_COLV.png" angle="0.0" scale="0.25" posX="4.9104004" posY="63.816254" ></Fragment>
-		<Fragment folderName="806" fileName="/806/806_COLR_TRANS.png" maskName="/806/shapeMask_COLR.png" versoFileName="/806/806_COLV_TRANS.png" versoMaskName="/806/shapeMask_COLV.png" angle="0.0" scale="0.25" posX="0.0" posY="30.309525" ></Fragment>
-		<Fragment folderName="805" fileName="/805/805_COLR_TRANS.png" maskName="/805/shapeMask_COLR.png" versoFileName="/805/805_COLV_TRANS.png" versoMaskName="/805/shapeMask_COLV.png" angle="0.0" scale="0.25" posX="19.549438" posY="0.0" ></Fragment>
-	</Compound>
-</Document>

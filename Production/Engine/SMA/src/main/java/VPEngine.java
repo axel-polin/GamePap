@@ -1,4 +1,5 @@
-/* Axel Polin 2019
+/* 
+ * Axel Polin 2019
  * 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -56,7 +57,15 @@ public class VPEngine extends PApplet {
 		fingerDetection = papart.loadTouchInput().initHandDetection();
 		papart.startTracking();
 		
+		// Initialize Render and Controller.
+		
 		vpEngineController = new VPEngineController(this,fingerDetection);
+		vpEngineView = new VPEngineView(...);
+		
+	    // Send Controller link to Render with vpEngineView.set
+	    // And send Render link to controller with vpEngineController.set  
+	    
+		vpEngineView.set...
 	}
 
 	@Override
@@ -69,7 +78,7 @@ public class VPEngine extends PApplet {
 	@Override
 	public void draw() {
 		//background(10);
-		vpEngineController.mainLoop();
+		vpEngineController.levelManagerLoop();
 	}
 
 	/**
