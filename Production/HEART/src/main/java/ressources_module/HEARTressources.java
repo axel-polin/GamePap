@@ -17,7 +17,7 @@
  * MA 02110-1301, USA.
  * 
  */
-package model_module;
+package ressources_module;
 
 public class VPEngineModel {
 	

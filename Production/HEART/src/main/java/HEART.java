@@ -41,8 +41,8 @@ import tech.lity.rea.colorconverter.*;
 import Jama.Matrix;
 import com.mkobos.pca_transform.*;
 
-import model_module.VPEngineModel;
-import controller_module.VPEngineController;
+import ressources_module.HEARTressources;
+import controller_module.HEARTcontroller;
 
 
 @SuppressWarnings("serial")

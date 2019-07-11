@@ -27,8 +27,8 @@ import fr.inria.papart.multitouch.detection.TouchDetectionDepth;
 import tech.lity.rea.skatolo.Skatolo;
 import tech.lity.rea.skatolo.events.ControlEvent;
 
-import model_module.VPEngineModel;
-import view_module.VPEngineView;
+import ressources_module.HEARTressources;
+import view_module.HEARTview;
 
 public class VPEngineController {	
 	
